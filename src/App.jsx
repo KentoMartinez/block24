@@ -17,7 +17,9 @@ function App() {
      return<p
      onClick={()=>{ setFeatPupId(puppy.id)}} key={puppy.id}>
      <h3 className='name'>{puppy.name}</h3>
-     {featPupId && (
+     </p>
+   })
+} {featPupId && (
         <div>
           <h2 className='popName'>{featuredPup.name}</h2>
           <ul className='info'>
@@ -27,11 +29,7 @@ function App() {
           </ul>
         </div>
       )}
-     </p>
-   })
-}
     </div>
-    
   );
 }
 
